@@ -1,0 +1,319 @@
+body    {
+    background-color: white;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Staatliches', cursive;
+    font-weight: 700;
+    color: black;
+}
+nav {
+    color: black;
+}
+h1      {
+    font-size: 30px;
+    font-weight: 700;
+    color: #6563ff;
+}
+h2      {
+    font-size: 24px;
+    font-weight: 700;
+    color: #6563ff;
+}
+h3      {
+    font-size: 18px;
+    font-weight: 700;
+    color: #6563ff;
+}
+a:link       {
+    color: #6563ff
+}
+a:visited   {
+    /* selected link*/
+    color: black;
+}
+a:hover, a:focus {
+    /* No underlining when hovering over a link */
+    text-decoration: none;
+}
+a:active    {
+    /* selected linked*/
+    color: #6563ff;;
+}
+button  {
+    /* overwrites broswe defaults and resets the border */
+    border: none;
+    display: inline-block;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+    background-color: #6563ff;
+    color: white;
+    text-decoration: none;
+    /* adds spacing to the button (this will be discussed in-depth later) */
+    padding: 10px;
+    border-radius: 3px;
+    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+.button  {
+    /* overwrites broswe defaults and resets the border */
+    border: none;
+    display: inline-block;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+    background-color: #6563ff;
+    color: white;
+    text-decoration: none;
+    /* adds spacing to the button (this will be discussed in-depth later) */
+    padding: 10px;
+    border-radius: 3px;
+    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+button:hover, button:focus, .button:hover, .button:focus  {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.9;
+}
+.button_secondary   {
+    background-color: white;
+    color: #6563ff;
+}
+.cv-button {
+    text-align: center ;
+    margin: 20px;
+}
+.navigation-list__item--active  {
+    text-decoration: none;
+    color: #6563ff;
+}
+.navigation-list__item  {
+    color: black;
+}
+.profile__portrait  {
+    float: left;
+    width: 250px;
+    margin-right: 40px;
+    border-radius: 20%;
+}
+.profile    {
+    max-width: 700px;
+    margin: 100px auto;
+}
+.profilecentre  {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+    grid-template-columns: auto auto;
+}
+*   {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.page-footer    {
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    position:relative;
+    bottom: 100%;
+    clear: both;
+}
+.page-header    {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+.page-header__item:last-child {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: right;
+}
+.navigation-list    {
+    list-style-type: none;
+}
+.navigation-list li {
+    display: inline-block;
+    margin: 15px;
+}
+.grid__item {
+    display: inline-block;
+    width: 33%;
+}
+@supports   (display: grid)    {
+.grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: 0 100px;
+}
+}
+.grid__item {
+    background-color: lightgray;
+    width: auto;
+    min-height: auto;
+    margin: 0;
+}
+.centre_aligned_header {
+    text-align: center;
+}
+.centre_aligned_text    {
+    text-align: center;
+    margin: 0px 100px;
+}
+.centre_table {
+    max-width: 700px;
+    margin: 0 auto;
+}
+@media all and (max-width: 500px)   {
+    .grid   {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+}
+@media all and (min-width: 500px) and (max-width: 750px)    {
+        .grid   {
+            -ms-grid-columns: 1fr 20px 1fr;
+            grid-template-columns: 1fr 1fr;
+        }
+}
+@media all and (max-width: 750px)    {
+    .grid   {
+        grid-gap: 10px
+    }
+    .grid__item:last-child    {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+    h1  {
+        font-size: 22px;
+    }
+}
+.londoncity  {
+    float: left;
+    width: 250px;
+    margin-right: 40px;
+    border-radius: 10%;
+}
+.centrelist {
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+}
+@-webkit-keyframes colour-change    {
+    0%    {
+        fill: #fcffad
+    }
+    50% {
+        fill: #edc655;
+    }
+    100%  {
+        fill: #f76414;
+    }
+}
+@keyframes colour-change    {
+    0%    {
+        fill: #fcffad
+    }
+    50% {
+        fill: #edc655;
+    }
+    100%  {
+        fill: #f76414;
+    }
+}
+.sun {
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-name: colour-change;
+            animation-name: colour-change;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+}
+@-webkit-keyframes  cloud-move  {
+    from    {
+        -webkit-transform: translate(0, 50px);
+                transform: translate(0, 50px);
+    }
+    to {
+        -webkit-transform: translate(200px, 50px);
+                transform: translate(200px, 50px);
+    }
+}
+@keyframes  cloud-move  {
+    from    {
+        -webkit-transform: translate(0, 50px);
+                transform: translate(0, 50px);
+    }
+    to {
+        -webkit-transform: translate(200px, 50px);
+                transform: translate(200px, 50px);
+    }
+}
+.cloud-front    {
+    -webkit-animation-duration: 30s;
+            animation-duration: 30s;
+    -webkit-animation-name: cloud-move;
+            animation-name: cloud-move;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+}
+@-webkit-keyframes cloud-move-reverse   {
+    from    {
+        -webkit-transform: translate(446px, 48px);
+                transform: translate(446px, 48px)
+    }
+    to  {
+        -webkit-transform: translate(100px, 48px);
+                transform: translate(100px, 48px)
+    }
+}
+@keyframes cloud-move-reverse   {
+    from    {
+        -webkit-transform: translate(446px, 48px);
+                transform: translate(446px, 48px)
+    }
+    to  {
+        -webkit-transform: translate(100px, 48px);
+                transform: translate(100px, 48px)
+    }
+}
+.cloud-back {
+    -webkit-animation: 30s cloud-move-reverse infinite alternate linear;
+            animation: 30s cloud-move-reverse infinite alternate linear; 
+}
+span    {
+    color: #6563ff;
+}
+.logoname   {
+    font-size: 30px;
+}
+.contact-main   {
+    text-align: center;
+}
