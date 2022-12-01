@@ -20,7 +20,7 @@ h1      {
 h2      {
     font-size: 24px;
     font-weight: 700;
-    color: var(--primary-color);;
+    color: var(--primary-color);
 }
 h3      {
     font-size: 18px;
@@ -40,7 +40,7 @@ a:hover, a:focus {
 }
 a:active    {
     /* selected linked*/
-    color: var(--primary-color);;
+    color: var(--primary-color);
 }
 button, .button  {
     /* overwrites broswe defaults and resets the border */
@@ -67,7 +67,7 @@ button:hover, button:focus, .button:hover, .button:focus  {
 }
 .button_secondary   {
     background-color: white;
-    color: var(--primary-color);;
+    color: var(--primary-color);
 }
 .cv-button {
     text-align: center ;
@@ -140,7 +140,6 @@ button:hover, button:focus, .button:hover, .button:focus  {
     width: auto;
     min-height: auto;
     margin: 0;
-    padding: 50px;
 }
 .centre_aligned_header {
     text-align: center;
@@ -231,11 +230,18 @@ button:hover, button:focus, .button:hover, .button:focus  {
     animation: 30s cloud-move-reverse infinite alternate linear; 
 }
 span    {
-    color: var(--primary-color);;
+    color: var(--primary-color);
 }
 .logoname   {
     font-size: 30px;
+    text-decoration: none;
 }
+.logonamelink {
+        text-decoration: none;
+    }
 .contact-main   {
     text-align: center;
+}
+.animate__animated.animate__fadeIn, .animate__fadeInRight {
+        --animate-duration: 4s;
 }
