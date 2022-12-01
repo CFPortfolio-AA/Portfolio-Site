@@ -140,6 +140,7 @@ button:hover, button:focus, .button:hover, .button:focus  {
     width: auto;
     min-height: auto;
     margin: 0;
+    padding: 50px;
 }
 .centre_aligned_header {
     text-align: center;
