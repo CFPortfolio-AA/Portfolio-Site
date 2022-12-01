@@ -243,5 +243,5 @@ span    {
     text-align: center;
 }
 .animate__animated.animate__fadeIn, .animate__fadeInRight {
-        --animate-duration: 4s;
+        --animate-duration: 9s;
 }
