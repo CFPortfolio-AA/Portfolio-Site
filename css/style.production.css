@@ -24,7 +24,7 @@ h3      {
     color: #6563ff;
 }
 a:link       {
-    color: #6563ff
+    color: black;
 }
 a:visited   {
     /* selected link*/
@@ -36,7 +36,7 @@ a:hover, a:focus {
 }
 a:active    {
     /* selected linked*/
-    color: #6563ff;;
+    color: black;
 }
 button  {
     /* overwrites broswe defaults and resets the border */
@@ -84,7 +84,7 @@ button:hover, button:focus, .button:hover, .button:focus  {
 }
 .button_secondary   {
     background-color: white;
-    color: #6563ff;
+    color: black;
 }
 .cv-button {
     text-align: center ;
@@ -138,6 +138,10 @@ button:hover, button:focus, .button:hover, .button:focus  {
     display: flex;
     width: 100%;
     padding: 20px;
+}
+.page-header__item {
+    height: 60px; 
+    width: 120px;
 }
 .page-header__item:last-child {
     -webkit-box-flex: 1;
